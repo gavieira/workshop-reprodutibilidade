@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Se usar este material, por favor cite-o como abaixo."
+title: "Pesquisa reprodutível na prática: workshop para programas de pós-graduação"
+type: software
+authors:
+  - family-names: Vieira
+    given-names: Gabriel Alves
+repository-code: "https://github.com/gavieira/workshop-reprodutibilidade"
+license: MIT
+keywords:
+  - reprodutibilidade
+  - ciência aberta
+  - pós-graduação
+  - R
+  - material didático
+date-released: 2026-11-16
