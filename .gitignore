@@ -7,8 +7,9 @@
 .Rproj.user/
 *.Rproj
 
-# Arquivos gerados pelos notebooks
+# Arquivos gerados pelos notebooks (os dados versionados ficam em data/)
 *.csv
+!data/*.csv
 
 # Sistema
 .DS_Store

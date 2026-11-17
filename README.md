@@ -12,6 +12,14 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 |---|---|---|
 | [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, `dplyr`, gráfico, teste t e registro da sessão) | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) |
 
+## Dados
+
+| Arquivo | Descrição |
+|---|---|
+| [`data/toothgrowth.csv`](data/toothgrowth.csv) | Comprimento dos odontoblastos de 60 porquinhos-da-índia que receberam vitamina C em três doses (0,5, 1 e 2 mg/dia), por suco de laranja (`OJ`) ou ácido ascórbico (`VC`). Exportado do conjunto `ToothGrowth`, do pacote `datasets` do R. |
+
+Os notebooks leem os dados diretamente pela URL do arquivo no GitHub, de modo que a análise pode ser reproduzida sem baixar nada.
+
 ## Como usar
 
 ### No Google Colab (sem instalar nada)
