@@ -13,7 +13,8 @@ n_por_grupo <- 10
 largo <- as.data.frame(lapply(medias, function(m) round(rnorm(n_por_grupo, m, desvio))))
 names(largo) <- names(medias)
 
-# Formato largo: um grupo por coluna, como os dados costumam ser digitados
+# Formato largo: um grupo por coluna, como os dados costumam ser digitados.
+# Este é o arquivo publicado no Zenodo (DOI 10.5281/zenodo.24328555).
 write.csv(largo, "data/pressao_largo.csv", row.names = FALSE, quote = FALSE)
 
 # Formato tidy: uma linha por animal, uma coluna por variável

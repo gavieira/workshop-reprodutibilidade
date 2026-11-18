@@ -16,13 +16,15 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 
 Todos os dados usados nos notebooks são **simulados**, criados para o workshop. Não são resultados de experimentos reais.
 
-| Arquivo | Descrição |
-|---|---|
-| [`data/pressao_largo.csv`](data/pressao_largo.csv) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
-| [`data/pressao.csv`](data/pressao.csv) | Os mesmos dados no formato tidy (`farmaco`, `dose`, `pas`). Usado para conferir a conversão feita no notebook. |
-| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | Glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada e serve à oficina do dia 1 e ao exercício do notebook. |
+Seguindo a prática que o workshop ensina, **dados e código são publicados separadamente**: o dado bruto da aula está no Zenodo, com DOI e licença CC BY; o código está aqui, com licença MIT.
 
-Os scripts que geram esses dados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL do arquivo, de modo que a análise pode ser reproduzida sem baixar nada.
+| Arquivo | Onde está | Descrição |
+|---|---|---|
+| `pressao_largo.csv` | Zenodo: [10.5281/zenodo.24328555](https://doi.org/10.5281/zenodo.24328555) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
+| [`data/pressao.csv`](data/pressao.csv) | Este repositório | Os mesmos dados no formato tidy (`farmaco`, `dose`, `pas`). Gabarito para conferir a conversão feita no notebook. |
+| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | Este repositório | Glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada e serve à oficina do dia 1 e ao exercício do notebook. |
+
+Os scripts que geram esses dados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL, de modo que a análise pode ser reproduzida sem baixar nada.
 
 ## Como usar
 
