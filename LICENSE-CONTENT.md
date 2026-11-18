@@ -1,11 +1,15 @@
-# Licença dos conteúdos
+# Licenças deste repositório
 
-Os textos e materiais didáticos deste repositório (as explicações em Markdown dos notebooks, o README e demais documentos) estão licenciados sob a **Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)**.
+A divisão é por tipo de arquivo:
+
+| O quê | Arquivos | Licença |
+|---|---|---|
+| Material didático | Notebooks (`notebooks/`, texto e código), README e demais documentos | **Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)** |
+| Software | Scripts (`scripts/`) e arquivos de configuração (`binder/`) | **MIT**, descrita no arquivo [`LICENSE`](LICENSE) |
+| Dados | Publicados no Zenodo, não neste repositório | **CC BY 4.0** |
+
+## CC BY 4.0
 
 Você pode copiar, redistribuir, adaptar e usar o material para qualquer finalidade, inclusive comercial, desde que atribua o crédito ao autor, indique a fonte e informe se fez alterações.
 
 Texto completo da licença: https://creativecommons.org/licenses/by/4.0/legalcode.pt
-
-O código (as células de código dos notebooks e eventuais scripts) está sob a licença MIT, descrita no arquivo [`LICENSE`](LICENSE).
-
-Os dados simulados criados para o workshop são publicados no Zenodo, sob CC BY 4.0. Os scripts que os geram (pasta `scripts/`) estão sob a licença MIT.

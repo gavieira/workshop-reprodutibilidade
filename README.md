@@ -16,7 +16,7 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 
 Os dados usados na aula são **simulados**, criados para o workshop. Não são resultados de experimentos reais.
 
-Seguindo a prática que o workshop ensina, **dados e código são publicados separadamente**: os dados estão no Zenodo, com DOI e licença CC BY; o código está aqui, com licença MIT.
+Seguindo a prática que o workshop ensina, **dados e código são publicados separadamente**: os dados estão no Zenodo, com DOI e licença CC BY; o notebook e os scripts estão aqui.
 
 | Arquivo | Onde está | Descrição |
 |---|---|---|
@@ -59,8 +59,11 @@ Antes de compartilhar um notebook, use **Reiniciar e executar tudo** (no Jupyter
 
 ## Licença
 
-- **Código:** [MIT](LICENSE).
-- **Textos e materiais didáticos:** [CC BY 4.0](LICENSE-CONTENT.md).
+- **Material didático** (notebooks, README e demais textos): [CC BY 4.0](LICENSE-CONTENT.md).
+- **Software** (scripts e configuração): [MIT](LICENSE).
+- **Dados:** publicados no Zenodo, sob CC BY 4.0.
+
+Detalhes em [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md).
 
 Você pode reutilizar e adaptar os materiais livremente, inclusive em outros cursos e workshops, desde que cite a fonte.
 
