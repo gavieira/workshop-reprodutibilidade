@@ -10,13 +10,15 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 
 | Material | Descrição | Abrir |
 |---|---|---|
-| [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, `dplyr`, gráfico, teste t e registro da sessão) | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_amostra.ipynb) |
+| [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, arrumação no formato tidy com `tidyr`, resumo com `dplyr`, gráfico, teste t e registro da sessão), com um exercício a partir da planilha do dia 1 | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_amostra.ipynb) |
 
 ## Dados
 
 | Arquivo | Descrição |
 |---|---|
-| [`data/toothgrowth.csv`](data/toothgrowth.csv) | Comprimento dos odontoblastos de 60 porquinhos-da-índia que receberam vitamina C em três doses (0,5, 1 e 2 mg/dia), por suco de laranja (`OJ`) ou ácido ascórbico (`VC`). Exportado do conjunto `ToothGrowth`, do pacote `datasets` do R. |
+| [`data/toothgrowth_prism.csv`](data/toothgrowth_prism.csv) | Os mesmos dados do `toothgrowth.csv`, no formato em que costumam sair do Prism: um grupo por coluna (`OJ_0.5`, `VC_1` etc.). É o ponto de partida da aula: o notebook o converte para o formato tidy. |
+| [`data/toothgrowth.csv`](data/toothgrowth.csv) | Comprimento dos odontoblastos de 60 porquinhos-da-índia que receberam vitamina C em três doses (0,5, 1 e 2 mg/dia), por suco de laranja (`OJ`) ou ácido ascórbico (`VC`), já no formato tidy. Exportado do conjunto `ToothGrowth`, do pacote `datasets` do R. Usado para conferir a conversão. |
+| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | **Dados simulados**, criados para o workshop: glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada (título e cabeçalho mesclados, duas variáveis numa coluna, tempos em colunas, médias no meio dos dados, exclusão indicada só pela cor) e serve à oficina do dia 1 e ao exercício do notebook. |
 
 Os notebooks leem os dados diretamente pela URL do arquivo no GitHub, de modo que a análise pode ser reproduzida sem baixar nada.
 
@@ -44,7 +46,7 @@ O Binder monta o ambiente a partir dos arquivos da pasta [`binder/`](binder/): a
 2. Instale os pacotes usados:
 
    ```r
-   install.packages(c("readr", "dplyr", "ggplot2"))
+   install.packages(c("readr", "readxl", "dplyr", "tidyr", "ggplot2"))
    ```
 
 3. Abra o notebook no Jupyter (com o kernel do R, [IRkernel](https://irkernel.github.io/)) ou no VS Code.
