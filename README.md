@@ -48,7 +48,7 @@ O Binder monta o ambiente a partir dos arquivos da pasta [`binder/`](binder/): a
 2. Instale os pacotes usados:
 
    ```r
-   install.packages(c("readr", "dplyr", "tidyr", "ggplot2"))
+   install.packages(c("readr", "readxl", "dplyr", "tidyr", "ggplot2"))
    ```
 
 3. Abra o notebook no Jupyter (com o kernel do R, [IRkernel](https://irkernel.github.io/)) ou no VS Code.
