@@ -8,6 +8,4 @@ Texto completo da licença: https://creativecommons.org/licenses/by/4.0/legalcod
 
 O código (as células de código dos notebooks e eventuais scripts) está sob a licença MIT, descrita no arquivo [`LICENSE`](LICENSE).
 
-Os dados simulados criados para o workshop (`data/gtt_simulado.xlsx`) também estão sob CC BY 4.0.
-
-O conjunto `ToothGrowth` (`data/toothgrowth.csv` e `data/toothgrowth_prism.csv`) faz parte do pacote `datasets`, que acompanha a instalação padrão do R, e não está coberto pelas licenças acima.
+Os dados simulados criados para o workshop (pasta `data/`) também estão sob CC BY 4.0. Os scripts que os geram (pasta `scripts/`) estão sob a licença MIT.

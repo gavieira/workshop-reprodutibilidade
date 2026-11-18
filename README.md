@@ -14,13 +14,15 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 
 ## Dados
 
+Todos os dados usados nos notebooks são **simulados**, criados para o workshop. Não são resultados de experimentos reais.
+
 | Arquivo | Descrição |
 |---|---|
-| [`data/toothgrowth_prism.csv`](data/toothgrowth_prism.csv) | Os mesmos dados do `toothgrowth.csv`, no formato em que costumam sair do Prism: um grupo por coluna (`OJ_0.5`, `VC_1` etc.). É o ponto de partida da aula: o notebook o converte para o formato tidy. |
-| [`data/toothgrowth.csv`](data/toothgrowth.csv) | Comprimento dos odontoblastos de 60 porquinhos-da-índia que receberam vitamina C em três doses (0,5, 1 e 2 mg/dia), por suco de laranja (`OJ`) ou ácido ascórbico (`VC`), já no formato tidy. Exportado do conjunto `ToothGrowth`, do pacote `datasets` do R. Usado para conferir a conversão. |
-| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | **Dados simulados**, criados para o workshop: glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada (título e cabeçalho mesclados, duas variáveis numa coluna, tempos em colunas, médias no meio dos dados, exclusão indicada só pela cor) e serve à oficina do dia 1 e ao exercício do notebook. |
+| [`data/pressao_largo.csv`](data/pressao_largo.csv) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
+| [`data/pressao.csv`](data/pressao.csv) | Os mesmos dados no formato tidy (`farmaco`, `dose`, `pas`). Usado para conferir a conversão feita no notebook. |
+| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | Glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada e serve à oficina do dia 1 e ao exercício do notebook. |
 
-Os notebooks leem os dados diretamente pela URL do arquivo no GitHub, de modo que a análise pode ser reproduzida sem baixar nada.
+Os scripts que geram esses dados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL do arquivo, de modo que a análise pode ser reproduzida sem baixar nada.
 
 ## Como usar
 
