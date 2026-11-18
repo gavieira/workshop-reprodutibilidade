@@ -10,21 +10,19 @@ O workshop é presencial, com duração de dois dias, e leva discentes e docente
 
 | Material | Descrição | Abrir |
 |---|---|---|
-| [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, arrumação no formato tidy com `tidyr`, resumo com `dplyr`, gráfico, teste t e registro da sessão), com um exercício a partir da planilha do dia 1 | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_amostra.ipynb) |
+| [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, arrumação no formato tidy com `tidyr`, resumo com `dplyr`, gráfico, teste t e registro da sessão) | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_amostra.ipynb) |
 
 ## Dados
 
-Todos os dados usados nos notebooks são **simulados**, criados para o workshop. Não são resultados de experimentos reais.
+Os dados usados na aula são **simulados**, criados para o workshop. Não são resultados de experimentos reais.
 
-Seguindo a prática que o workshop ensina, **dados e código são publicados separadamente**: o dado bruto da aula está no Zenodo, com DOI e licença CC BY; o código está aqui, com licença MIT.
+Seguindo a prática que o workshop ensina, **dados e código são publicados separadamente**: os dados estão no Zenodo, com DOI e licença CC BY; o código está aqui, com licença MIT.
 
 | Arquivo | Onde está | Descrição |
 |---|---|---|
 | `pressao_largo.csv` | Zenodo: [10.5281/zenodo.24328555](https://doi.org/10.5281/zenodo.24328555) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
-| [`data/pressao.csv`](data/pressao.csv) | Este repositório | Os mesmos dados no formato tidy (`farmaco`, `dose`, `pas`). Gabarito para conferir a conversão feita no notebook. |
-| [`data/gtt_simulado.xlsx`](data/gtt_simulado.xlsx) | Este repositório | Glicemia de 12 camundongos (dieta controle ou hiperlipídica, fêmeas e machos) num teste de tolerância à glicose, de 0 a 120 minutos. A planilha é propositalmente desorganizada e serve à oficina do dia 1 e ao exercício do notebook. |
 
-Os scripts que geram esses dados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL, de modo que a análise pode ser reproduzida sem baixar nada.
+Os scripts que geram os dados simulados estão na pasta [`scripts/`](scripts/). O notebook lê os dados diretamente pela URL do Zenodo, de modo que a análise pode ser reproduzida sem baixar nada.
 
 ## Como usar
 
@@ -50,7 +48,7 @@ O Binder monta o ambiente a partir dos arquivos da pasta [`binder/`](binder/): a
 2. Instale os pacotes usados:
 
    ```r
-   install.packages(c("readr", "readxl", "dplyr", "tidyr", "ggplot2"))
+   install.packages(c("readr", "dplyr", "tidyr", "ggplot2"))
    ```
 
 3. Abra o notebook no Jupyter (com o kernel do R, [IRkernel](https://irkernel.github.io/)) ou no VS Code.

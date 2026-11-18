@@ -8,4 +8,4 @@ Texto completo da licença: https://creativecommons.org/licenses/by/4.0/legalcod
 
 O código (as células de código dos notebooks e eventuais scripts) está sob a licença MIT, descrita no arquivo [`LICENSE`](LICENSE).
 
-Os dados simulados criados para o workshop (pasta `data/`) também estão sob CC BY 4.0. Os scripts que os geram (pasta `scripts/`) estão sob a licença MIT.
+Os dados simulados criados para o workshop são publicados no Zenodo, sob CC BY 4.0. Os scripts que os geram (pasta `scripts/`) estão sob a licença MIT.
