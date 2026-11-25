@@ -4,13 +4,14 @@ Materiais de um workshop sobre pesquisa reprodutível e ciência aberta para pro
 
 O workshop é presencial, com duração de dois dias, e leva discentes e docentes a incorporar práticas de pesquisa aberta e reprodutível ao próprio trabalho: do planejamento do estudo ao compartilhamento de dados, código e resultados.
 
-> **Em desenvolvimento.** Por ora, este repositório contém a aula-amostra do bloco *Da planilha ao script*. O notebook completo, com exercícios, e os materiais dos demais blocos serão adicionados.
+> **Em desenvolvimento.** Por ora, este repositório contém os materiais do bloco *Da planilha ao script*: a aula-amostra e uma versão completa, com uma introdução ao R para quem nunca programou. Os materiais dos demais blocos serão adicionados.
 
 ## Materiais
 
 | Material | Descrição | Abrir |
 |---|---|---|
 | [`da_planilha_ao_script_amostra.ipynb`](notebooks/da_planilha_ao_script_amostra.ipynb) | Aula-amostra: da análise por cliques a um notebook reprodutível em R (leitura de dados, arrumação no formato tidy com `tidyr`, resumo com `dplyr`, gráfico, teste t e registro da sessão) | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_amostra.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_amostra.ipynb) |
+| [`da_planilha_ao_script_full.ipynb`](notebooks/da_planilha_ao_script_full.ipynb) | Versão completa: começa com uma introdução ao R para quem nunca programou (operações matemáticas, objetos e atribuição, funções e documentação, tipos de dados e valores ausentes, comparações, vetores, vetorização, estruturas de dados e pacotes) e segue com o mesmo conteúdo da aula-amostra | [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gavieira/workshop-reprodutibilidade/blob/main/notebooks/da_planilha_ao_script_full.ipynb) [![Abrir no Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gavieira/workshop-reprodutibilidade/HEAD?labpath=notebooks%2Fda_planilha_ao_script_full.ipynb) |
 
 ## Dados
 
@@ -22,13 +23,13 @@ Seguindo a prática que o workshop ensina, **dados e código são publicados sep
 |---|---|---|
 | `pressao_largo.csv` | Zenodo: [10.5281/zenodo.24328555](https://doi.org/10.5281/zenodo.24328555) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
 
-Os scripts que geram os dados simulados estão na pasta [`scripts/`](scripts/). O notebook lê os dados diretamente pela URL do Zenodo, de modo que a análise pode ser reproduzida sem baixar nada.
+Os scripts que geram os dados simulados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL do Zenodo, de modo que a análise pode ser reproduzida sem baixar nada.
 
 ## Como usar
 
 ### No Google Colab (sem instalar nada)
 
-1. Clique no botão **Abrir no Colab** na tabela acima.
+1. Clique no botão **Abrir no Colab** do notebook escolhido, na tabela acima. Quem nunca programou deve começar pela versão completa.
 2. Confira se o ambiente é R: **Ambiente de execução → Alterar o tipo de ambiente de execução → R**.
 3. Rode as células na ordem, com **Shift + Enter**.
 
@@ -36,7 +37,7 @@ O ambiente de R do Colab já traz os pacotes usados instalados. As versões, por
 
 ### No Binder (sem conta e com ambiente fixo)
 
-1. Clique no botão **Abrir no Binder** na tabela acima.
+1. Clique no botão **Abrir no Binder** do notebook escolhido, na tabela acima.
 2. Aguarde a montagem do ambiente. Na primeira vez, pode levar alguns minutos.
 3. Rode as células na ordem, com **Shift + Enter**.
 
