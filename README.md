@@ -22,8 +22,9 @@ Seguindo a prática que o workshop ensina, **dados e código são publicados sep
 | Arquivo | Onde está | Descrição |
 |---|---|---|
 | `pressao_largo.csv` | Zenodo: [10.5281/zenodo.24328555](https://doi.org/10.5281/zenodo.24328555) | Pressão arterial sistólica (mmHg) de 60 ratos hipertensos tratados com um de dois fármacos (`A`, `B`) em uma de três doses (1, 3 e 10 mg/kg), 10 animais por grupo. Um grupo por coluna (`A_1`, `B_10` etc.), como os dados costumam ser digitados. É o ponto de partida da aula. |
+| `gtt_simulado.xlsx` | Zenodo: [10.5281/zenodo.24536482](https://doi.org/10.5281/zenodo.24536482) | Glicemia (mg/dL) de 12 camundongos num teste de tolerância à glicose (0 a 120 min), após dieta controle ou hiperlipídica, em fêmeas e machos. Planilha propositalmente desorganizada, usada na prática de arrumação de dados. |
 
-Os scripts que geram os dados simulados estão na pasta [`scripts/`](scripts/). Os notebooks leem os dados diretamente pela URL do Zenodo, de modo que a análise pode ser reproduzida sem baixar nada.
+Os scripts que geram os dados simulados estão na pasta [`scripts/`](scripts/). Os notebooks obtêm os dados diretamente pela URL do Zenodo, de modo que a análise pode ser reproduzida sem baixar nada manualmente.
 
 ## Como usar
 
